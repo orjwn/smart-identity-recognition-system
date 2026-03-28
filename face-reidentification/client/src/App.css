@@ -1,0 +1,24 @@
+.page { min-height: 100vh; background: #0b1220; color: #e7eefc; padding: 24px; font-family: system-ui; }
+.topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
+.title { font-size: 22px; font-weight: 700; }
+.subtitle { font-size: 13px; opacity: .7; margin-top: 4px; }
+.btn { background:#2b72ff; border:0; color:#fff; padding:10px 14px; border-radius:10px; cursor:pointer; font-weight:600; }
+.btnSecondary { background:#1a2b4a; border:1px solid rgba(255,255,255,.12); color:#e7eefc; padding:10px 12px; border-radius:10px; cursor:pointer; font-weight:600; }
+.panel { background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:26px; max-width:680px; }
+.big { font-size: 34px; font-weight: 800; margin-bottom: 8px; }
+.muted { opacity: .75; margin-bottom: 16px; }
+.note { background: rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:14px; margin-top:12px; }
+.error { margin-top:8px; color:#ff7b7b; }
+.grid { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.card { background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:18px; }
+.wide { grid-column: 1 / span 2; }
+.cardTitle { font-size:14px; opacity:.75; margin-bottom:10px; }
+.cardValue { font-size:26px; font-weight:800; margin-bottom:12px; }
+.kv { display:grid; grid-template-columns:140px 1fr; gap:8px 10px; align-items:baseline; }
+.k { opacity:.7; font-size:13px; }
+.v { font-size:14px; }
+.flightTop { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px; }
+.flightNo { font-size:22px; font-weight:800; }
+.status { opacity:.8; }
+.actions { display:flex; gap:10px; margin-top:14px; flex-wrap:wrap; }
+.mapPlaceholder { margin-top:14px; padding:12px; border-radius:12px; border:1px dashed rgba(255,255,255,.18); opacity:.8; }

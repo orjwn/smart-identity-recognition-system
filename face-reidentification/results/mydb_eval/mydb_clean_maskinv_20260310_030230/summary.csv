@@ -1,0 +1,4 @@
+run_id,dataset,split,model,scenario,ids,probes,time_sec,top1,unknown,threshold,eer,eer_threshold,tar@far1e-2,thr@far1e-2,tar@far1e-3,thr@far1e-3
+20260310_030230,datasets\processed\mydb_clean,split_seed42.json,maskinv,uu,12,12,2.7091143131256104,1.0,0,,0.0,0.12663200497627258,1.0,0.12663200497627258,1.0,0.12663200497627258
+20260310_030230,datasets\processed\mydb_clean,split_seed42.json,maskinv,um,12,12,2.8422763347625732,1.0,0,,0.0,0.1637910008430481,1.0,0.1637910008430481,1.0,0.1637910008430481
+20260310_030230,datasets\processed\mydb_clean,split_seed42.json,maskinv,mm,12,12,0.0,1.0,0,,0.0,0.14678099751472473,1.0,0.14678099751472473,1.0,0.14678099751472473
