@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Identity Recognition System for Airports
 
 Undergraduate Final Year Project implementation for BSc Computer Science with Artificial Intelligence.
@@ -304,4 +305,6 @@ usage: main.py [-h] [--det-weight DET_WEIGHT] [--rec-weight REC_WEIGHT]
 <!-- ## Support
 
 If you find this project useful, please consider giving it a star on GitHub! -->
+=======
+>>>>>>> fe7f3b857ae02bee28786004c26d9f82f583fc96
 
