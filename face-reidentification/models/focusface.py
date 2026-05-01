@@ -14,6 +14,12 @@ from model import FocusFace as FocusFaceNet
 
 
 class FocusFaceEncoder:
+    """Wrapper around the external FocusFace repository used for masked routing.
+
+    The external repository remains in `external/FocusFace`; this class provides
+    the stable project-facing API used by the backend and evaluation scripts.
+    """
+
     def __init__(self, model_path: str, device: str = None, identities: int = 85742):
         self.model_path = str(model_path)
         self.device = torch.device(device if device else ("cuda" if torch.cuda.is_available() else "cpu"))

@@ -8,7 +8,8 @@
       "place_of_birth": "Munich, Germany",
       "issue_date": "2019-06-22",
       "expiry_date": "2029-06-22",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "de"
     },
     {
       "full_name": "Akshay Kumar",
@@ -18,7 +19,8 @@
       "place_of_birth": "Porto, Portugal",
       "issue_date": "2021-03-18",
       "expiry_date": "2031-03-18",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "amber heard",
@@ -28,7 +30,8 @@
       "place_of_birth": "Lyon, France",
       "issue_date": "2020-05-11",
       "expiry_date": "2030-05-11",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "fr"
     },
     {
       "full_name": "Anushka Sharma",
@@ -38,7 +41,8 @@
       "place_of_birth": "Jaipur, India",
       "issue_date": "2017-08-25",
       "expiry_date": "2027-08-25",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "en"
     },
     {
       "full_name": "Billie Eilish",
@@ -48,7 +52,8 @@
       "place_of_birth": "San Diego, USA",
       "issue_date": "2022-04-09",
       "expiry_date": "2032-04-09",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "en"
     },
     {
       "full_name": "Courtney Cox",
@@ -58,7 +63,8 @@
       "place_of_birth": "Vancouver, Canada",
       "issue_date": "2016-12-14",
       "expiry_date": "2026-12-14",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "en"
     },
     {
       "full_name": "Cristiano Ronaldo",
@@ -68,7 +74,8 @@
       "place_of_birth": "Braga, Portugal",
       "issue_date": "2019-02-01",
       "expiry_date": "2029-02-01",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "Dominic Purcell",
@@ -78,7 +85,8 @@
       "place_of_birth": "Sydney, Australia",
       "issue_date": "2023-07-19",
       "expiry_date": "2033-07-19",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "Gwyneth Paltrow",
@@ -88,7 +96,8 @@
       "place_of_birth": "Cape Town, South Africa",
       "issue_date": "2018-11-06",
       "expiry_date": "2028-11-06",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "en"
     },
     {
       "full_name": "Henry Cavill",
@@ -98,7 +107,8 @@
       "place_of_birth": "Manchester, UK",
       "issue_date": "2021-09-27",
       "expiry_date": "2031-09-27",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "Hrithik Roshan",
@@ -108,7 +118,8 @@
       "place_of_birth": "Mumbai, India",
       "issue_date": "2020-01-15",
       "expiry_date": "2030-01-15",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "Hugh Jackman",
@@ -118,7 +129,8 @@
       "place_of_birth": "Melbourne, Australia",
       "issue_date": "2019-10-30",
       "expiry_date": "2029-10-30",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "Lindsey Morgan",
@@ -128,7 +140,8 @@
       "place_of_birth": "Valencia, Spain",
       "issue_date": "2022-06-03",
       "expiry_date": "2032-06-03",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "es"
     },
     {
       "full_name": "Natalie Portman",
@@ -138,7 +151,8 @@
       "place_of_birth": "Haifa, Israel",
       "issue_date": "2017-03-22",
       "expiry_date": "2027-03-22",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "ar"
     },
     {
       "full_name": "Orjuwan",
@@ -148,7 +162,8 @@
       "place_of_birth": "Houston, USA",
       "issue_date": "2018-09-30",
       "expiry_date": "2028-09-30",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "ar"
     },
     {
       "full_name": "Rihanna",
@@ -158,7 +173,8 @@
       "place_of_birth": "Bridgetown, Barbados",
       "issue_date": "2021-12-08",
       "expiry_date": "2031-12-08",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "en"
     },
     {
       "full_name": "Robert Downey Jr",
@@ -168,7 +184,8 @@
       "place_of_birth": "Chicago, USA",
       "issue_date": "2018-05-17",
       "expiry_date": "2028-05-17",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "Roger Federer",
@@ -178,7 +195,8 @@
       "place_of_birth": "Basel, Switzerland",
       "issue_date": "2020-09-02",
       "expiry_date": "2030-09-02",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "de"
     },
     {
       "full_name": "Vijay Deverakonda",
@@ -188,7 +206,8 @@
       "place_of_birth": "Hyderabad, India",
       "issue_date": "2022-02-18",
       "expiry_date": "2032-02-18",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "Virat Kohli",
@@ -198,7 +217,8 @@
       "place_of_birth": "New Delhi, India",
       "issue_date": "2019-04-26",
       "expiry_date": "2029-04-26",
-      "sex": "M"
+      "sex": "M",
+      "preferred_language": "en"
     },
     {
       "full_name": "Zendaya",
@@ -208,7 +228,8 @@
       "place_of_birth": "Austin, USA",
       "issue_date": "2023-01-05",
       "expiry_date": "2033-01-05",
-      "sex": "F"
+      "sex": "F",
+      "preferred_language": "en"
     }
   ]
 }

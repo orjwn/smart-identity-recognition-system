@@ -1,3 +1,141 @@
+# Smart Identity Recognition System for Airports
+
+Undergraduate Final Year Project implementation for BSc Computer Science with Artificial Intelligence.
+
+This project demonstrates a smart airport kiosk that recognises a traveller from a live camera feed, joins the recognised identity to simulated passport, boarding pass, and flight records, and displays the result in a React kiosk interface.
+
+## Main Components
+
+- `server/` - FastAPI kiosk backend, webcam stream, SSE event stream, recognition worker, and traveller data joining.
+- `client/` - React/Vite kiosk frontend.
+- `models/` - wrappers for SCRFD, ArcFace, AdaFace, FocusFace, and MaskInv.
+- `database/face_database/` - generated FAISS indexes and metadata for each recognition model.
+- `data/` - simulated passenger, boarding pass, and flight JSON files.
+- `evaluation/` - evaluation scripts, result CSVs, and generated plots for report evidence.
+- `assets/faces/` - enrolment/demo face images used to build recognition databases.
+- `external/` - copied third-party/reference model repositories used by wrappers or retained for research traceability.
+- `weights/` - required model weights. These are large and should not be committed.
+
+## Backend Setup
+
+From PowerShell:
+
+```powershell
+cd C:\Users\orjoa\OneDrive\Desktop\project\SmartIdentity\face-reidentification
+.\venv\Scripts\Activate.ps1
+cd server
+python -m uvicorn main:app --port 8000
+```
+
+Useful backend URLs:
+
+- Backend health: http://127.0.0.1:8000/health
+- API docs: http://127.0.0.1:8000/docs
+- Webcam stream: http://127.0.0.1:8000/kiosk/video
+- SSE events: http://127.0.0.1:8000/kiosk/events
+- Current kiosk state: http://127.0.0.1:8000/kiosk/state
+
+The backend now starts gracefully if the webcam, data files, model weights, or FAISS databases are unavailable. Check `/health` for the exact readiness status.
+
+## Frontend Setup
+
+From PowerShell:
+
+```powershell
+cd C:\Users\orjoa\OneDrive\Desktop\project\SmartIdentity\face-reidentification\client
+npm install
+npm run dev
+```
+
+Open:
+
+- Frontend: http://localhost:5173
+
+The Vite dev server proxies `/kiosk`, `/health`, `/admin`, and `/traveller` requests to `http://127.0.0.1:8000`.
+
+## Required Model Weights
+
+The current kiosk backend expects:
+
+- `weights/det_10g.onnx`
+- `weights/w600k_mbf.onnx`
+- `weights/adaface_ir18_webface4m.ckpt`
+- `weights/w600k_r50.onnx`
+- `weights/focus_face_w_pretrained.mdl`
+- `weights/maskinv/maskinv_hg.onnx`
+- `weights/maskinv/maskinv_hg.onnx.data`
+
+The system also expects generated FAISS databases under:
+
+- `database/face_database/arcface_mbf/`
+- `database/face_database/adaface_ir18/`
+- `database/face_database/arcface_r50/`
+- `database/face_database/focusface/`
+- `database/face_database/maskinv/`
+
+If any model or database is missing, the backend remains online and reports the missing component through `/health`, but live recognition will be disabled until the asset is restored or rebuilt.
+
+## Mock Data
+
+The airport records are simulated and are stored in:
+
+- `data/passports.json`
+- `data/boarding_passes.json`
+- `data/flights.json`
+
+Joining logic:
+
+1. Recognised face label is normalised and matched to `passports[*].full_name`.
+2. The passport number is matched to `boarding_passes[*].passport_number`.
+3. The boarding pass flight number is matched to `flights[*].flight_number`.
+
+Do not use real passenger data in these files for the final submission. Keep it clearly described as mock/simulated data in the report and viva.
+
+## Troubleshooting
+
+- If `/health` returns `camera.ready: false`, check that a webcam is connected or set `CAMERA_INDEX`.
+- If `/health` shows a model as missing, restore the corresponding file in `weights/`.
+- If `/health` shows a database as missing, rebuild or restore the matching `database/face_database/<model>/` folder.
+- If the frontend shows an event stream error, start the backend first and confirm `http://127.0.0.1:8000/kiosk/events` responds.
+- If the camera image does not load in the browser, open `http://127.0.0.1:8000/kiosk/video` directly.
+- If a traveller is recognised but no details appear, check spelling consistency between the face database label and `data/passports.json`.
+
+## Evaluation Material
+
+Evaluation scripts and saved result CSVs live in `evaluation/`. The plotting script reads the saved CSVs and writes report-ready summaries/plots to `evaluation/plots/`.
+
+```powershell
+cd C:\Users\orjoa\OneDrive\Desktop\project\SmartIdentity\face-reidentification
+.\venv\Scripts\Activate.ps1
+python evaluation\plot_results.py
+```
+
+The evaluation code is separate from the live kiosk runtime and should not modify the runtime FAISS databases.
+
+## Cleaned External Repositories
+
+Copied model/research repositories are grouped under `external/`:
+
+- `external/adaface-test/` - AdaFace reference repository used by `models/adaface.py`.
+- `external/FocusFace/` - FocusFace reference repository used by `models/focusface.py`.
+- `external/Masked-Face-Recognition-KD/` - MaskInv/knowledge-distillation reference repository retained as research/vendor evidence.
+
+The current run commands are unchanged after this cleanup.
+
+## Final University Supporting Material Notes
+
+For final submission or viva support, include:
+
+- a short architecture diagram showing frontend, FastAPI backend, model wrappers, FAISS databases, and mock airport data;
+- screenshots of `/health`, the kiosk scanning view, and a successful recognised traveller screen;
+- evaluation tables/plots from `evaluation/plots/`;
+- a clear statement that passenger records are simulated;
+- a note that `weights/`, datasets, logs, generated databases, and built frontend files are excluded from Git/submission unless specifically required by the university.
+
+---
+
+The original upstream face re-identification README is retained below for reference.
+
 # Real-Time Face Re-Identification with FAISS, ArcFace & SCRFD
 
 ![Downloads](https://img.shields.io/github/downloads/yakhyo/face-reidentification/total)

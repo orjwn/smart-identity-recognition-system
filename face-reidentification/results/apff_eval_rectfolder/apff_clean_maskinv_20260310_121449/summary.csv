@@ -1,2 +1,0 @@
-run_id,dataset,split,model,scenario,ids,probes,time_sec,top1,unknown,threshold,eer,eer_threshold,tar@far1e-2,thr@far1e-2,tar@far1e-3,thr@far1e-3
-20260310_121449,datasets\processed\apff_clean,split_seed42_rect.json,maskinv,uu,395,2522,699.6289339065552,0.7624900872323552,0,,0.12807297706604004,0.11666300147771835,0.818398118019104,0.2526490092277527,0.7593179941177368,0.3578149974346161

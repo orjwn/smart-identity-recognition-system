@@ -1,0 +1,62 @@
+.vscode/
+**/.vscode/
+
+__pycache__/
+**/__pycache__/
+*.pyc
+
+venv/
+.venv/
+env/
+ENV/
+**/venv/
+**/.venv/
+**/env/
+
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Large model weights
+weights/
+**/weights/
+*.onnx
+*.pth
+*.pt
+*.ckpt
+*.mdl
+
+# Runtime databases / generated indexes
+database/
+**/database/
+
+# External repos / copied third-party code
+external/
+**/external/
+Masked-Face-Recognition-KD/
+**/Masked-Face-Recognition-KD/
+adaface-test/
+**/adaface-test/
+
+# Datasets and generated evaluation outputs
+datasets/
+**/datasets/
+**/datasets/raw/
+face-reidentification/results/
+face-reidentification/evaluation/results/
+face-reidentification/evaluation/datasets/
+*.npy
+*.npz
+*.csv
+
+# Logs and generated media
+*.log
+app.log
+output_video.mp4
+*.mp4
+*.avi
+
+# Trash / temporary folders
+trash/
+face-reidentification/trash/

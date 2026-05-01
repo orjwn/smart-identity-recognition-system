@@ -27,8 +27,11 @@ class AdaFace:
         """
         Load AdaFace backbone + checkpoint.
         """
+        # AdaFace is kept as an external reference repository. Only its network
+        # definition is imported here; the kiosk wrapper owns preprocessing and
+        # embedding normalization for this project.
         adaface_repo_dir = os.path.abspath(
-            os.path.join(os.path.dirname(__file__), "..", "..", "adaface-test", "AdaFace")
+            os.path.join(os.path.dirname(__file__), "..", "external", "adaface-test", "AdaFace")
         )
 
         if adaface_repo_dir not in sys.path:

@@ -1,4 +1,0 @@
-run_id,dataset,split,model,scenario,ids,probes,time_sec,top1,unknown,threshold,eer,eer_threshold,tar@far1e-2,thr@far1e-2,tar@far1e-3,thr@far1e-3
-20260310_030138,datasets\processed\mydb_clean,split_seed42.json,arcface,uu,12,12,0.13442707061767578,1.0,0,,0.0,0.13784800469875336,1.0,0.13784800469875336,1.0,0.13784800469875336
-20260310_030138,datasets\processed\mydb_clean,split_seed42.json,arcface,um,12,12,0.08604145050048828,1.0,0,,0.0,0.19812199473381042,1.0,0.19812199473381042,1.0,0.19812199473381042
-20260310_030138,datasets\processed\mydb_clean,split_seed42.json,arcface,mm,12,12,0.0,1.0,0,,0.0,0.20341800153255463,1.0,0.20341800153255463,1.0,0.20341800153255463
