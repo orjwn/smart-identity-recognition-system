@@ -1,7 +1,7 @@
 {
     "git.ignoreLimitWarning": true,
     "python.analysis.extraPaths": [
-        "./face-reidentification",
-        "./face-reidentification"
+    "./smart-identity-kiosk",
+    "./smart-identity-kiosk"
     ]
 }

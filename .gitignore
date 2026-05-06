@@ -43,9 +43,9 @@ adaface-test/
 datasets/
 **/datasets/
 **/datasets/raw/
-face-reidentification/results/
-face-reidentification/evaluation/results/
-face-reidentification/evaluation/datasets/
+smart-identity-kiosk/results/
+smart-identity-kiosk/evaluation/results/
+smart-identity-kiosk/evaluation/datasets/
 *.npy
 *.npz
 *.csv
@@ -59,4 +59,4 @@ output_video.mp4
 
 # Trash / temporary folders
 trash/
-face-reidentification/trash/
+smart-identity-kiosk/trash/
